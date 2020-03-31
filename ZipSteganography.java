@@ -25,7 +25,7 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 @SuppressWarnings("serial")
-public class VideoSteganography extends JFrame {
+public class ZipSteganography extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
@@ -52,7 +52,7 @@ public class VideoSteganography extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					VideoSteganography frame = new VideoSteganography();
+					ZipSteganography frame = new ZipSteganography();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -64,9 +64,9 @@ public class VideoSteganography extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public VideoSteganography() {
+	public ZipSteganography() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(VideoSteganography.class.getResource("/source/hackerb.jpg")));
-		setTitle("Video Steganography");
+		setTitle("Zip Steganography");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 877, 560);
 		contentPane = new JPanel();
@@ -140,46 +140,13 @@ public class VideoSteganography extends JFrame {
 		btnDecrypt.setBounds(87, 407, 194, 78);
 		contentPane.add(btnDecrypt);
 
-		JLabel label = new JLabel("Steganography Using Video");
+		JLabel label = new JLabel("Steganography Using Video zipping");
 		label.setForeground(new Color(255, 127, 80));
 		label.setFont(new Font("Algerian", Font.BOLD, 35));
 		label.setBounds(151, 13, 565, 78);
 		contentPane.add(label);
 		
-		lblNewLabel = new JLabel("By-");
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblNewLabel.setBounds(531, 97, 56, 28);
-		contentPane.add(lblNewLabel);
 		
-		lblNewLabel_1 = new JLabel("Nikhil Wagh");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 18));
-		lblNewLabel_1.setBounds(623, 138, 150, 28);
-		contentPane.add(lblNewLabel_1);
-		
-		lblNewLabel_2 = new JLabel("Akanksha Gaikwad");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 18));
-		lblNewLabel_2.setBounds(623, 188, 181, 28);
-		contentPane.add(lblNewLabel_2);
-		
-		lblNewLabel_3 = new JLabel("Tejal Pawar");
-		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 18));
-		lblNewLabel_3.setBounds(623, 241, 150, 28);
-		contentPane.add(lblNewLabel_3);
-		
-		lblNewLabel_4 = new JLabel("Vaishali Chothe");
-		lblNewLabel_4.setFont(new Font("Tahoma", Font.BOLD, 18));
-		lblNewLabel_4.setBounds(623, 300, 150, 28);
-		contentPane.add(lblNewLabel_4);
-		
-		lblNewLabel_5 = new JLabel("Project Guide -");
-		lblNewLabel_5.setFont(new Font("Tahoma", Font.BOLD, 18));
-		lblNewLabel_5.setBounds(486, 415, 143, 28);
-		contentPane.add(lblNewLabel_5);
-		
-		lblNewLabel_6 = new JLabel("Rohit Kautkar");
-		lblNewLabel_6.setFont(new Font("Tahoma", Font.BOLD, 18));
-		lblNewLabel_6.setBounds(635, 406, 212, 47);
-		contentPane.add(lblNewLabel_6);
 	}
 
 	//method to select file
