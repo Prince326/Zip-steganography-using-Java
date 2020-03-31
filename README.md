@@ -15,4 +15,5 @@ Steps to Encrypt the data:-
 Steps to Decrypt the data:-
 1.To decrypt the data we select the encrypted file from the folder.
 2.Then we click on the decrypt buttton .
+
 Note:- To see the Encrypted or Decrypted files you have go to the encrytion or decryption folder which are automatically made in your drive. 
