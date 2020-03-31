@@ -35,7 +35,7 @@ public class ZipSteganography extends JFrame {
 	private JButton btnData;
 	private JButton btnVideoFile;
 
-	String DataFile,VideoFile,FinalFile,file1,file2;
+	String DataFile,VideoFile,FinalFile,file_name;
 	private JLabel lblNewLabel;
 	private JLabel lblNewLabel_1;
 	private JLabel lblNewLabel_2;
@@ -85,7 +85,7 @@ public class ZipSteganography extends JFrame {
 		btnData.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			DataFile = selectFile();
-			textField.setText(file1);
+			textField.setText(file_name);
 
 			}
 		});
@@ -96,7 +96,7 @@ public class ZipSteganography extends JFrame {
 		btnVideoFile.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				VideoFile = selectFile();
-				textField_1.setText(file1);
+				textField_1.setText(file_name);
 
 				
 			}
@@ -156,7 +156,7 @@ public class ZipSteganography extends JFrame {
 		int result = fileChooser.showOpenDialog(this);
 		if (result == JFileChooser.APPROVE_OPTION) {
 		    File selectedFile = fileChooser.getSelectedFile();
-		    file1 = selectedFile.getName();
+		    file_name = selectedFile.getName();
 		    return selectedFile.getAbsolutePath();
 		    
 		}
@@ -171,7 +171,7 @@ public class ZipSteganography extends JFrame {
 
 
 		new File("E:\\Video Steganography\\Encryted Files").mkdirs();
-        String zipFile = "E:\\Video Steganography\\Encryted Files\\new.mp4";
+        String zipFile = "E:\\Video Steganography\\Encryted Files\\encrypted_file.mp4";
 
         String[] srcFiles = { Video, Text};
 
