@@ -170,8 +170,8 @@ public class ZipSteganography extends JFrame {
 	public void zipFiles(String Text,String Video) {
 
 
-		new File("E:\\Video Steganography\\Encryted Files").mkdirs();
-        String zipFile = "E:\\Video Steganography\\Encryted Files\\encrypted_file.mp4";
+		new File("C:\\Video Steganography\\Encryted Files").mkdirs();
+        String zipFile = "C:\\Video Steganography\\Encryted Files\\encrypted_file.mp4";
 
         String[] srcFiles = { Video, Text};
 
@@ -251,7 +251,7 @@ public void unzipFiles() {
             while(ze != null){
                 String fileName = ze.getName();
                 File newFile = new File(destDir + File.separator + fileName);
-                //System.out.println("Unzipping to "+newFile.getAbsolutePath());
+            
                 //create directories for sub directories in zip
                 new File(newFile.getParent()).mkdirs();
                 FileOutputStream fos = new FileOutputStream(newFile);
